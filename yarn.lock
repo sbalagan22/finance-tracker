@@ -12,22 +12,36 @@
   resolved "https://registry.yarnpkg.com/@jsonjoy.com/buffers/-/buffers-1.0.0.tgz#ade6895b7d3883d70f87b5743efaa12c71dfef7a"
   integrity sha512-NDigYR3PHqCnQLXYyoLbnEdzMMvzeiCWo1KOut7Q0CoIqg9tUAPKJ1iq/2nFhc5kZtexzutNY0LFjdwWL3Dw3Q==
 
+"@jsonjoy.com/codegen@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@jsonjoy.com/codegen/-/codegen-1.0.0.tgz#5c23f796c47675f166d23b948cdb889184b93207"
+  integrity sha512-E8Oy+08cmCf0EK/NMxpaJZmOxPqM+6iSe2S4nlSBrPZOORoDJILxtbSUEDKQyTamm/BVAhIGllOBNU79/dwf0g==
+
 "@jsonjoy.com/json-pack@^1.0.3":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@jsonjoy.com/json-pack/-/json-pack-1.5.0.tgz#e4f87a67ef431488b98f1476f30480cecaa2e5f7"
-  integrity sha512-8FACCxfDF9cRbzYFG2LzCdzj7Ji+oPDI+JVG0H95Y9gupU0v5TUvuLmxNfC4GU9r4A1Vt2OxJGsi8Z+0a3CWfQ==
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@jsonjoy.com/json-pack/-/json-pack-1.8.0.tgz#08dbac656f14fbc7a53861242c2a553075fa310a"
+  integrity sha512-paJGjyBTRzfgkqhIyer992g21aSKuu9h//zGS7aqm795roD6VYFf6iU9NYua1Bndmh/NRPkjtm9+hEPkK0yZSw==
   dependencies:
     "@jsonjoy.com/base64" "^1.1.1"
+    "@jsonjoy.com/json-pointer" "^1.0.1"
     "@jsonjoy.com/util" "^1.1.2"
     hyperdyperid "^1.2.0"
     thingies "^1.20.0"
 
+"@jsonjoy.com/json-pointer@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@jsonjoy.com/json-pointer/-/json-pointer-1.0.1.tgz#3b710158e8a212708a2886ea5e38d92e2ea4f4a0"
+  integrity sha512-tJpwQfuBuxqZlyoJOSZcqf7OUmiYQ6MiPNmOv4KbZdXE/DdvBSSAwhos0zIlJU/AXxC8XpuO8p08bh2fIl+RKA==
+  dependencies:
+    "@jsonjoy.com/util" "^1.3.0"
+
 "@jsonjoy.com/util@^1.1.2", "@jsonjoy.com/util@^1.3.0":
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/@jsonjoy.com/util/-/util-1.8.1.tgz#62387224001e59ded1ca3744b88b44cdb808e7f9"
-  integrity sha512-26hOMkQx15sYBpt/bCK3/S7Bep8vMy+VKGBhWQax7GXYd+mwP5mc0HNX5oqLws/JQZ9GRjn9rvXoDbcq1OC2xA==
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@jsonjoy.com/util/-/util-1.9.0.tgz#7ee95586aed0a766b746cd8d8363e336c3c47c46"
+  integrity sha512-pLuQo+VPRnN8hfPqUTLTHk126wuYdXVxE6aDmjSeV4NCAgyxWbiOIeNJVtID3h1Vzpoi9m4jXezf73I6LgabgQ==
   dependencies:
     "@jsonjoy.com/buffers" "^1.0.0"
+    "@jsonjoy.com/codegen" "^1.0.0"
 
 "@leichtgewicht/ip-codec@^2.0.1":
   version "2.0.5"
@@ -38,6 +52,13 @@
   version "6.1.710"
   resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.1.710.tgz#5c77515cbc9b8fb5118afa0aa0048192b33c33ea"
   integrity sha512-YDzMuh8mDRNLFXiexlLVnF1NUwk1bXwwO1gtEhOCsCqIsL6D21JfxpMwAD5x8qzrMJ1J0RZVa2hLl7ofeg+Mqw==
+
+"@rails/activestorage@^6.0.0":
+  version "6.1.710"
+  resolved "https://registry.yarnpkg.com/@rails/activestorage/-/activestorage-6.1.710.tgz#bc914716f642ba233f033b7765a44dc3bfb626f5"
+  integrity sha512-hLXxAtn7hSWXkTzMGOmQmjuzJ0FzVw8j/Zi8DGS+DG9x4uPQjl+ZEVdty7pFcsBCjkpejtk0TChcBQlLW8sgOg==
+  dependencies:
+    spark-md5 "^3.0.0"
 
 "@rails/ujs@^6.0.0":
   version "6.1.710"
@@ -143,11 +164,11 @@
     "@types/node" "*"
 
 "@types/node@*":
-  version "24.1.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-24.1.0.tgz#0993f7dc31ab5cc402d112315b463e383d68a49c"
-  integrity sha512-ut5FthK5moxFKH2T1CUOC6ctR67rQRvvHdFLCD2Ql6KXmMuCrjsSsRI9UsLCm9M18BMwClv4pn327UvB7eeO1w==
+  version "24.2.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-24.2.0.tgz#cde712f88c5190006d6b069232582ecd1f94a760"
+  integrity sha512-3xyG3pMCq3oYCNg7/ZP+E1ooTaGB4cG8JWRsqqOYQdbWNY4zbaV0Ennrd7stjiJEFZCaybcIgpTjJWHRfBSIDw==
   dependencies:
-    undici-types "~7.8.0"
+    undici-types "~7.10.0"
 
 "@types/qs@*":
   version "6.14.0"
@@ -842,9 +863,9 @@ media-typer@0.3.0:
   integrity sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==
 
 memfs@^4.6.0:
-  version "4.32.0"
-  resolved "https://registry.yarnpkg.com/memfs/-/memfs-4.32.0.tgz#821307c95db69b58c16502fc9f144f0c0f4cac2b"
-  integrity sha512-FMWXkYN6hbMnhtgvOGUAqpkwuVYLPQYtOU5AxGrT2aRexaGrqMfIphsWmUGTNCqXKFcvQ45NKlpI5LE1ofB00w==
+  version "4.36.0"
+  resolved "https://registry.yarnpkg.com/memfs/-/memfs-4.36.0.tgz#b9fa8d97ddda3cb8c06908bceec956560c33d979"
+  integrity sha512-mfBfzGUdoEw5AZwG8E965ej3BbvW2F9LxEWj4uLxF6BEh1dO2N9eS3AGu9S6vfenuQYrVjsbUOOZK7y3vz4vyQ==
   dependencies:
     "@jsonjoy.com/json-pack" "^1.0.3"
     "@jsonjoy.com/util" "^1.3.0"
@@ -1223,6 +1244,11 @@ sockjs@^0.3.24:
     uuid "^8.3.2"
     websocket-driver "^0.7.4"
 
+spark-md5@^3.0.0:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/spark-md5/-/spark-md5-3.0.2.tgz#7952c4a30784347abcee73268e473b9c0167e3fc"
+  integrity sha512-wcFzz9cDfbuqe0FZzfi2or1sgyIrsDwmPwfZC4hiNidPdPINjeUwNfv5kldczoEAcjl9Y1L3SM7Uz2PUEQzxQw==
+
 spdy-transport@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/spdy-transport/-/spdy-transport-3.0.0.tgz#00d4863a6400ad75df93361a1608605e5dcdcf31"
@@ -1315,10 +1341,10 @@ type-is@~1.6.18:
     media-typer "0.3.0"
     mime-types "~2.1.24"
 
-undici-types@~7.8.0:
-  version "7.8.0"
-  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-7.8.0.tgz#de00b85b710c54122e44fbfd911f8d70174cd294"
-  integrity sha512-9UJ2xGDvQ43tYyVMpuHlsgApydB8ZKfVYTsLDhXkFL/6gfkp+U8xTGdh8pMJv1SpZna0zxG1DwsKZsreLbXBxw==
+undici-types@~7.10.0:
+  version "7.10.0"
+  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-7.10.0.tgz#4ac2e058ce56b462b056e629cc6a02393d3ff350"
+  integrity sha512-t5Fy/nfn+14LuOc2KNYg75vZqClpAiqscVvMygNnlsHBFpSXdJaYtXMcdNLpl/Qvc3P2cB3s6lOV51nqsFq4ag==
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
