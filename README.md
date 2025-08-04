@@ -1,24 +1,35 @@
-# README
+# Finance Tracker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the finance tracker app from the Complete Ruby on Rails Developer course.
 
-Things you may want to cover:
+## Description
 
-* Ruby version
+A web application built with Ruby on Rails 6.0.6.1 for tracking personal finances, expenses, and income.
 
-* System dependencies
+## Features
 
-* Configuration
+- User authentication and authorization
+- Track income and expenses
+- Categorize transactions
+- View financial reports and analytics
 
-* Database creation
+## Technology Stack
 
-* Database initialization
+- Ruby 2.7.6
+- Rails 6.0.6.1
+- SQLite3 (development)
+- Webpacker for JavaScript asset management
+- Bootstrap for styling
 
-* How to run the test suite
+## Getting Started
 
-* Services (job queues, cache servers, search engines, etc.)
+1. Clone the repository
+2. Run `bundle install` to install Ruby dependencies
+3. Run `yarn install` to install JavaScript dependencies
+4. Run `rails db:create` to create the database
+5. Run `rails server` to start the development server
+6. Visit `http://localhost:3000` in your browser
 
-* Deployment instructions
+## Development
 
-* ...
+This application is built as part of the Complete Ruby on Rails Developer course, focusing on building a real-world finance tracking application with modern Rails practices.
